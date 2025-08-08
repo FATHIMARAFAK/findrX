@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | findrX</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f2f6fa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .logo span {
+      color: #4A90E2;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 20px;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    nav a:hover {
+      color: #4A90E2;
+    }
+
+    .container {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.2s ease;
+      max-width: 300px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #4A90E2;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #4A90E2;
+      color: white;
+      font-size: 14px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      background-color: #357ABD;
+    }
+
+    footer {
+      background: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 12px;
+      color: #777;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.03);
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0 0 0;
+      }
+
+      h2 {
+        font-size: 18px;
+        text-align: left;
+      }
+
+      .card h3 {
+        font-size: 16px;
+      }
+
+      .card p,
+      .card a {
+        font-size: 13px;
+      }
+
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">findr<span>X</span></div>
+    <nav>
+      <!-- ✅ Added SETTINGS here -->
+      <a href="#">PROFILE</a>
+      <a href="#">SETTINGS</a>
+      <a href="#">LOGOUT</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Welcome User 👋</h2>
+
+    <!-- ✅ Find Matches shown below Welcome -->
+    <div class="cards">
+      <div class="card">
+        <h3>Find Matches</h3>
+        <p>Search and connect instantly.</p>
+        <a href="locked.html">Search </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 findrX. All rights reserved.
+  </footer>
+
+</body>
+</html>
